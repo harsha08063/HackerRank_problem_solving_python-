@@ -1,0 +1,18 @@
+n=int(input())
+l=list(map(int,input().split()))
+count1=0
+count2=0
+count3=0
+for i in l:
+    if i>0:
+        count1=count1+1
+    elif i<0:
+        count2=count2+1
+    else:
+        count3=count3+1
+a=count1/n
+b=count2/n
+c=count3/n
+print("{0:.6f}".format(a))
+print("{0:.6f}".format(b))
+print("{0:.6f}".format(c))
