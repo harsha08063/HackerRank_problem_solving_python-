@@ -1,0 +1,29 @@
+l1=list(map(int,input().split()))
+l2=list(map(int,input().split()))
+l3=list(map(int,input().split()))
+l4=list(map(int,input().split()))
+l5=list(map(int,input().split()))
+l6=[]
+l7=[]
+s=l1[0]
+t=l1[1]
+a=l2[0]
+b=l2[1]
+m=l3[0]
+n=l3[1]
+for i in l4:
+    x=i+a
+    l6.append(x)
+for i in l5:
+    y=i+b
+    l7.append(y)
+napples=0
+noranges=0
+for i in l6:
+    if i in range(s,t+1):
+        napples=napples+1
+for i in l7:
+    if i in range(s,t+1):
+        noranges=noranges+1
+print(napples)
+print(noranges)
