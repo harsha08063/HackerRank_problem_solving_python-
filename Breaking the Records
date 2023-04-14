@@ -1,0 +1,17 @@
+n=int(input())
+l=list(map(int,input().split()))
+min=0
+max=0
+rmin=l[0]
+rmax=l[0]
+for i in l:
+    if i>rmax:
+        rmax=i
+        max=max+1
+    elif i<rmin:
+        rmin=i
+        min=min+1
+    else:
+        max=max+0
+        min=min+0
+print(max,min)
