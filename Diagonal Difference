@@ -1,0 +1,18 @@
+n=int(input())
+l=[]
+for i in range(n):
+    a=list(map(int,input().split()))
+    l.append(a)
+sum=0
+sum1=0
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            sum=sum + l[i][j]
+for i in range(n):
+    sum1=sum1+l[i][n-i-1]
+if sum>sum1:
+    print(sum-sum1)
+else:
+    print(sum1-sum)
+            
