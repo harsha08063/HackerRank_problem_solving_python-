@@ -1,0 +1,20 @@
+n=int(input())
+for i in range(n):
+    l=list(map(int,input().split()))
+    a=l[0]
+    b=l[1]
+    c=l[2]
+    if a>c:
+        x=a-c
+    else:
+        x=c-a
+    if b>c:
+        y=b-c
+    else:
+        y=c-b
+    if x>y:
+        print("Cat B")
+    elif x<y:
+        print("Cat A")
+    else:
+        print("Mouse C")
